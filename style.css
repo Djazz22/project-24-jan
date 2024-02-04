@@ -1,0 +1,211 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 1240px;
+    height: 36px;
+    top: 50px;
+    left: 100px;
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Hero Component Styles */
+.hero {
+    position: relative;
+}
+
+.hero-image {
+    width: 1340px;
+    height: 600px;
+    position: absolute;
+    top: 134px;
+    left: 50px;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures content is on top of the image */
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5959;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Collection Component Styles */
+.collection {
+    position: relative;
+}
+
+.collection-image {
+    position: absolute;
+    border-radius: 10px;
+}
+
+.collection-image img {
+    object-fit: cover;
+}
+
+.collection-image.first-image {
+    width: 670px;
+    height: 63px;
+    top: 960px;
+    left: 385px;
+}
+
+.collection-image.second-image {
+    width: 1240px;
+    height: 430px;
+    top: 1147px;
+    left: 100px;
+}
+
+
+/* New Arrival Component Styles */
+.new-arrival {
+    position: relative;
+}
+
+.new-arrival .h2 {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.new-arrival .p2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.new-arrival-image {
+    width: 571px;
+    height: 259px;
+    top: 1803px;
+    left: 100px;
+    border-radius: 50px;
+    background: url("shopping-cart-plain-background-with-copy-space_23-2148288240.png");
+    background-size: cover;
+    position: absolute;
+}
+
+.new-arrival-image.second-image {
+    width: 619px;
+    height: 583px;
+    top: 1803px;
+    left: 721px;
+    border-radius: 50px;
+    background: url("portrait-expressive-young-woman-with-shopping-bags.png");
+    background-size: cover;
+    position: absolute;
+}
+
+.new-arrival-image.third-image {
+    width: 571px;
+    height: 259px;
+    top: 2112px;
+    left: 100px;
+    border-radius: 50px;
+    background: url("3d-shopping-online-concept-with-shopping-cart-bag-balloon-3d-rendering_265427-246.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+
+/* Categories Component Styles */
+.categories {
+    position: relative;
+}
+
+.categories .h3 {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.categories .p3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.categories-image {
+    width: 1240px;
+    height: 788px;
+    top: 2647px;
+    left: 100px;
+    background: url("C:\Users\Lenovo\Downloads.jpg");
+    background-size: cover;
+    position: absolute;
+}
+
+
+/* Footer Styles */
+footer {
+    position: relative;
+}
+
+.footer-image {
+    width: 1440px;
+    height: 483px;
+    top: 3520px;
+    background: url("C:\Users\Lenovo\Downloads.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+
+@media (max-width: 650px) {
+    /* Footer Columns for Mobile View */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
